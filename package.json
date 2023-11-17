@@ -1,0 +1,15 @@
+{
+  "name": "pricing_table",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "compile": "sass styles/main.sass ./style.css",
+    "watch": "sass --watch styles/main.sass ./style.css"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "sass": "^1.69.5"
+  }
+}
