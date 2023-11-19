@@ -1,0 +1,142 @@
+.table
+  margin-bottom: 30px
+
+  &__head h1
+    margin-bottom: 25px
+    font-size: 32px
+    text-transform: uppercase
+    text-shadow: 2px 2px 2px rgba(50,50,50,0.85)
+
+  &__body
+    display: flex
+    align-items: flex-start
+    justify-content: space-between
+
+    &__row
+      display: flex
+      flex-direction: column
+      width: 32%
+      padding: 10px
+      border-radius: 10px
+      border-width: 1px
+      border-style: solid
+      overflow: hidden
+
+      &--basic
+        border-color: $primary-basic-color
+      &--standart
+        border-color: $primary-standart-color
+      &--premium
+        border-color: $primary-premium-color
+
+    &__cell
+
+      &--heading
+        margin: -10px -10px 15px -10px
+        padding: 10px
+        color: $main-light-color
+        text-align: center
+
+      &--basic
+        background-color: $primary-basic-color
+        border-color: $primary-basic-color
+      &--standart
+        background-color: $primary-standart-color
+        border-color: $primary-standart-color
+      &--premium
+        background-color: $primary-premium-color
+        border-color: $primary-premium-color
+
+      &--pricing
+        background-color: transparent
+
+        ul
+          border-bottom-width: 1px
+          border-bottom-style: solid
+          border-bottom-color: inherit
+          margin-bottom: 15px
+
+          li
+            margin: 0 auto 10px
+            width: max-content
+
+            &.active
+              transform: scale(1.5)
+
+            strong
+              position: relative
+              display: inline-block
+              margin-right: 12px
+
+              &::before
+                content: '$'
+                position: absolute
+                top: 50%
+                left: -10px
+                transform: translateY(-50%)
+
+            em
+              position: relative
+              color: $main-grey-color
+              font-size: 14px
+
+              &::before
+                content: '/'
+                position: absolute
+                top: 50%
+                left: -8px
+                transform: translateY(-50%)
+
+      &--features
+        ul
+          margin-bottom: 15px
+          
+          li
+            display: flex
+            align-items: center
+            justify-content: space-between
+            padding: 10px 0
+
+            span
+              display: flex
+              align-items: center
+              justify-content: center
+              width: 30px
+              min-width: 30px
+              height: 30px
+              border-radius: 50%
+              color: $main-light-color
+
+            &.allowed span
+              background-color: $accent-green-color
+            &.forbidden span
+              background-color: $accent-red-color
+
+      &--buy
+        position: relative
+        margin: 0 -10px -10px -10px
+        padding: 10px
+        color: $main-light-color
+        height: 55px
+
+        button
+          position: absolute
+          top: 0
+          left: 0
+          width: 100%
+          height: 100%
+          font-size: 24px
+          font-weight: 700
+          text-transform: uppercase
+          color: $main-light-color
+          border: 2px solid inherit
+          transition: box-shadow 0.4s linear
+
+          &:hover
+            box-shadow: inset 0 -55px 0 0 $accent-green-color
+
+
+
+
+
+

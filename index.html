@@ -19,104 +19,88 @@
           </th>
         </thead>
         <tbody class="table__body">
-          <tr class="table__body__row">
-            <td class="table__body__cell table__body__cell--basic">Basic</td>
-            <td class="table__body__cell">
+          <tr class="table__body__row table__body__row--basic">
+            <td class="table__body__cell table__body__cell--basic table__body__cell--heading">
+              <h2>Basic</h2>
+            </td>
+            <td class="table__body__cell table__body__cell--basic table__body__cell--pricing">
               <ul>
-                <li><strong>9.99</strong><em>month</em></li>
+                <li class="active"><strong>9.99</strong><em>month</em></li>
                 <li><strong>99.99</strong><em>year</em></li>
               </ul>
             </td>
-            <td class="table__body__cell">
+            <td class="table__body__cell table__body__cell--features">
               <ul>
-                <li>All courses access <span>✔</span></li>
-                <li>Interactive quizzes <span>✔</span></li>
-                <li>Personalized learning paths <span>✘</span></li>
-                <li>Downloadable additional resources <span>✘</span></li>
-                <li>24/7 Live chat support <span>✘</span></li>
+                <li class="allowed">All courses access <span>✔</span></li>
+                <li class="allowed">Interactive quizzes <span>✔</span></li>
+                <li class="forbidden">Personalized learning paths <span>✘</span></li>
+                <li class="forbidden">Downloadable additional resources <span>✘</span></li>
+                <li class="forbidden">24/7 Live chat support <span>✘</span></li>
               </ul>
             </td>
-            <td class="table__body__cell">
-              <fieldset>
-                <legend>Choose billing frequency:</legend>
-                <label>
-                  <input type="radio" name="billingPlanBasic" value="monthly">
-                  <p>Monthly</p>
-                </label>
-                <label>
-                  <input type="radio" name="billingPlanBasic" value="yearly">
-                  <p>Yearly</p>
-                </label>
-              </fieldset>
+            <td class="table__body__cell table__body__cell--basic table__body__cell--buy">
+              <button>Sign Up</button>
             </td>
-            <td class="table__body__cell"><button>Sign Up</button></td>
           </tr>
-          <tr class="table__body-row">
-            <td class="table__body__cell table__body__cell--standart">Standard</td>
-            <td class="table__body__cell">
+          <tr class="table__body__row table__body__row--standart">
+            <td class="table__body__cell table__body__cell--standart table__body__cell--heading">
+              <h2>Standard</h2>
+            </td>
+            <td class="table__body__cell table__body__cell--standart table__body__cell--pricing">
               <ul>
-                <li><strong>19.99</strong><em>month</em></li>
+                <li class="active"><strong>19.99</strong><em>month</em></li>
                 <li><strong>199.99</strong><em>year</em></li>
               </ul>
             </td>
-            <td class="table__body__cell">
+            <td class="table__body__cell table__body__cell--features">
               <ul>
-                <li>All courses access <span>✔</span></li>
-                <li>Interactive quizzes <span>✔</span></li>
-                <li>Personalized learning paths <span>✔</span></li>
-                <li>Downloadable additional resources <span>✘</span></li>
-                <li>24/7 Live chat support <span>✘</span></li>
+                <li class="allowed">All courses access <span>✔</span></li>
+                <li class="allowed">Interactive quizzes <span>✔</span></li>
+                <li class="allowed">Personalized learning paths <span>✔</span></li>
+                <li class="forbidden">Downloadable additional resources <span>✘</span></li>
+                <li class="forbidden">24/7 Live chat support <span>✘</span></li>
               </ul>
             </td>
-            <td class="table__body__cell">
-              <fieldset>
-                <legend>Choose billing frequency:</legend>
-                <label>
-                  <input type="radio" name="billingPlanStandard" value="monthly">
-                  <p>Monthly</p>
-                </label>
-                <label>
-                  <input type="radio" name="billingPlanStandard" value="yearly">
-                  <p>Yearly</p>
-                </label>
-              </fieldset>
+            <td class="table__body__cell table__body__cell--standart table__body__cell--buy">
+              <button>Sign Up</button>
             </td>
-            <td class="table__body__cell"><button>Sign Up</button></td>
           </tr>
-          <tr class="table__body-row">
-            <td class="table__body__cell table__body__cell--premium">Premium</td>
-            <td class="table__body__cell">
+          <tr class="table__body__row table__body__row--premium">
+            <td class="table__body__cell table__body__cell--premium table__body__cell--heading">
+              <h2>Premium</h2>
+            </td>
+            <td class="table__body__cell table__body__cell--premium table__body__cell--pricing">
               <ul>
-                <li><strong>29.99</strong><em>month</em></li>
+                <li class="active"><strong>29.99</strong><em>month</em></li>
                 <li><strong>299.99</strong><em>year</em></li>
               </ul>
             </td>
-            <td class="table__body__cell">
+            <td class="table__body__cell table__body__cell--features">
               <ul>
-                <li>All courses access <span>✔</span></li>
-                <li>Interactive quizzes <span>✔</span></li>
-                <li>Personalized learning paths <span>✔</span></li>
-                <li>Downloadable additional resources <span>✔</span></li>
-                <li>24/7 Live chat support <span>✔</span></li>
+                <li class="allowed">All courses access <span>✔</span></li>
+                <li class="allowed">Interactive quizzes <span>✔</span></li>
+                <li class="allowed">Personalized learning paths <span>✔</span></li>
+                <li class="allowed">Downloadable additional resources <span>✔</span></li>
+                <li class="allowed">24/7 Live chat support <span>✔</span></li>
               </ul>
             </td>
-            <td class="table__body__cell">
-              <fieldset>
-                <legend>Choose billing frequency:</legend>
-                <label>
-                  <input type="radio" name="billingPlanPremium" value="monthly">
-                  <p>Monthly</p>
-                </label>
-                <label>
-                  <input type="radio" name="billingPlanPremium" value="yearly">
-                  <p>Yearly</p>
-                </label>
-              </fieldset>
+            <td class="table__body__cell table__body__cell--premium table__body__cell--buy">
+              <button>Sign Up</button>
             </td>
-            <td class="table__body__cell"><button>Sign Up</button></td>
           </tr>
         </tbody>
       </table>
+      <fieldset class="pricing-table__billing">
+        <legend>Choose billing frequency:</legend>
+        <label>
+          <input type="radio" name="billingPlan" value="monthly" checked>
+          <p>Monthly</p>
+        </label>
+        <label>
+          <input type="radio" name="billingPlan" value="yearly">
+          <p>Yearly</p>
+        </label>
+      </fieldset>
     </section>
   </main>
 </body>
