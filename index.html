@@ -3,28 +3,31 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./style.css">
   <title>Document</title>
 </head>
 <body>
-  <main>
-    <section>
-      <table>
-        <thead>
-          <th>
+  <main class="pricing-table">
+    <section class="pricing-table__section">
+      <table class="pricing-table__table table">
+        <thead class="table__head">
+          <th class="table__head-row">
             <h1>Pricing table</h1>
           </th>
         </thead>
-        <tbody>
-          <tr>
-            <td>Basic</td>
-            <td>
+        <tbody class="table__body">
+          <tr class="table__body__row">
+            <td class="table__body__cell table__body__cell--basic">Basic</td>
+            <td class="table__body__cell">
               <ul>
                 <li><strong>9.99</strong><em>month</em></li>
                 <li><strong>99.99</strong><em>year</em></li>
               </ul>
             </td>
-            <td>
+            <td class="table__body__cell">
               <ul>
                 <li>All courses access <span>✔</span></li>
                 <li>Interactive quizzes <span>✔</span></li>
@@ -33,7 +36,7 @@
                 <li>24/7 Live chat support <span>✘</span></li>
               </ul>
             </td>
-            <td>
+            <td class="table__body__cell">
               <fieldset>
                 <legend>Choose billing frequency:</legend>
                 <label>
@@ -46,17 +49,17 @@
                 </label>
               </fieldset>
             </td>
-            <td><button>Sign Up</button></td>
+            <td class="table__body__cell"><button>Sign Up</button></td>
           </tr>
-          <tr>
-            <td>Standard</td>
-            <td>
+          <tr class="table__body-row">
+            <td class="table__body__cell table__body__cell--standart">Standard</td>
+            <td class="table__body__cell">
               <ul>
                 <li><strong>19.99</strong><em>month</em></li>
                 <li><strong>199.99</strong><em>year</em></li>
               </ul>
             </td>
-            <td>
+            <td class="table__body__cell">
               <ul>
                 <li>All courses access <span>✔</span></li>
                 <li>Interactive quizzes <span>✔</span></li>
@@ -65,7 +68,7 @@
                 <li>24/7 Live chat support <span>✘</span></li>
               </ul>
             </td>
-            <td>
+            <td class="table__body__cell">
               <fieldset>
                 <legend>Choose billing frequency:</legend>
                 <label>
@@ -78,17 +81,17 @@
                 </label>
               </fieldset>
             </td>
-            <td><button>Sign Up</button></td>
+            <td class="table__body__cell"><button>Sign Up</button></td>
           </tr>
-          <tr>
-            <td>Premium</td>
-            <td>
+          <tr class="table__body-row">
+            <td class="table__body__cell table__body__cell--premium">Premium</td>
+            <td class="table__body__cell">
               <ul>
                 <li><strong>29.99</strong><em>month</em></li>
                 <li><strong>299.99</strong><em>year</em></li>
               </ul>
             </td>
-            <td>
+            <td class="table__body__cell">
               <ul>
                 <li>All courses access <span>✔</span></li>
                 <li>Interactive quizzes <span>✔</span></li>
@@ -97,7 +100,7 @@
                 <li>24/7 Live chat support <span>✔</span></li>
               </ul>
             </td>
-            <td>
+            <td class="table__body__cell">
               <fieldset>
                 <legend>Choose billing frequency:</legend>
                 <label>
@@ -110,7 +113,7 @@
                 </label>
               </fieldset>
             </td>
-            <td><button>Sign Up</button></td>
+            <td class="table__body__cell"><button>Sign Up</button></td>
           </tr>
         </tbody>
       </table>
