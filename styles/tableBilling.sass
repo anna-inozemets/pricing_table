@@ -19,10 +19,11 @@
     justify-content: center
     width: max-content
     min-width: 125px
-    padding: 15px 15px 15px 25px
+    padding: 10px 15px 10px 25px
     border-radius: 10px
     border: 1px solid $main-grey-color
     color: $main-grey-color
+    transition: color 0.4s linear, background-color 0.4s linear, border-color 0.4s linear
 
     &:first-of-type
       margin-left: auto
@@ -36,6 +37,7 @@
       height: 100%
       opacity: 0
       cursor: pointer
+      z-index: 1
 
     p
       position: relative
@@ -52,6 +54,7 @@
         border: 3px solid $main-grey-color
         border-radius: 50%
         background-color: $main-grey-color
+        transition: background-color 0.4s linear, border-color 0.4s linear
 
     &.active
       color: $main-light-color
@@ -61,3 +64,12 @@
       p::before
         background-color: $accent-green-color
         border-color: $main-light-color
+
+@include onMobile
+  .pricing-table__billing
+    gap: 15px
+
+    label
+      min-width: 115px
+      padding: 10px 15px 10px 25px
+

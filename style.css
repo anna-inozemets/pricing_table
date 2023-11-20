@@ -52,6 +52,16 @@ body {
   -moz-box-shadow: 10px 10px 25px 0px rgba(50, 50, 50, 0.85);
 }
 
+@media screen and (max-width: 1024px) {
+  .pricing-table__section {
+    padding: 35px 20px;
+  }
+}
+@media screen and (max-width: 800px) {
+  .pricing-table__section {
+    padding: 25px 10px;
+  }
+}
 .table {
   margin-bottom: 30px;
 }
@@ -112,12 +122,17 @@ body {
   border-bottom-color: inherit;
   margin-bottom: 15px;
 }
+.table__body__cell--pricing ul[data-billing-plan=monthly] li:first-child {
+  transform: scale(1.5);
+}
+.table__body__cell--pricing ul[data-billing-plan=yearly] li:last-child {
+  transform: scale(1.5);
+}
 .table__body__cell--pricing ul li {
   margin: 0 auto 10px;
   width: max-content;
-}
-.table__body__cell--pricing ul li.active {
-  transform: scale(1.5);
+  transform: scale(0.9);
+  transition: transform 0.4s linear;
 }
 .table__body__cell--pricing ul li strong {
   position: relative;
@@ -193,6 +208,34 @@ body {
   box-shadow: inset 0 -55px 0 0 #008000;
 }
 
+@media screen and (max-width: 800px) {
+  .table__body__row {
+    width: 33%;
+  }
+  .table__body__cell--features ul li {
+    padding: 5px 0;
+  }
+  .table__body__cell--features ul li span {
+    width: 25px;
+    min-width: 25px;
+    height: 25px;
+  }
+}
+@media screen and (max-width: 640px) {
+  .table {
+    margin-bottom: 20px;
+  }
+  .table__body {
+    flex-direction: column;
+  }
+  .table__body__row {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+  .table__body__row:last-child {
+    margin-bottom: 0;
+  }
+}
 .pricing-table__billing {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -214,10 +257,11 @@ body {
   justify-content: center;
   width: max-content;
   min-width: 125px;
-  padding: 15px 15px 15px 25px;
+  padding: 10px 15px 10px 25px;
   border-radius: 10px;
   border: 1px solid #626262;
   color: #626262;
+  transition: color 0.4s linear, background-color 0.4s linear, border-color 0.4s linear;
 }
 .pricing-table__billing label:first-of-type {
   margin-left: auto;
@@ -231,6 +275,7 @@ body {
   height: 100%;
   opacity: 0;
   cursor: pointer;
+  z-index: 1;
 }
 .pricing-table__billing label p {
   position: relative;
@@ -247,6 +292,7 @@ body {
   border: 3px solid #626262;
   border-radius: 50%;
   background-color: #626262;
+  transition: background-color 0.4s linear, border-color 0.4s linear;
 }
 .pricing-table__billing label.active {
   color: #f7f7f7;
@@ -256,6 +302,16 @@ body {
 .pricing-table__billing label.active p::before {
   background-color: #008000;
   border-color: #f7f7f7;
+}
+
+@media screen and (max-width: 640px) {
+  .pricing-table__billing {
+    gap: 15px;
+  }
+  .pricing-table__billing label {
+    min-width: 115px;
+    padding: 10px 15px 10px 25px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

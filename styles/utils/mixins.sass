@@ -1,0 +1,11 @@
+@mixin onSmallDesktop
+  @media screen and (max-width: 1024px)
+    @content
+
+@mixin onTablet
+  @media screen and (max-width: 800px)
+    @content
+
+@mixin onMobile
+  @media screen and (max-width: 640px)
+    @content

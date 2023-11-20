@@ -30,7 +30,6 @@
         border-color: $primary-premium-color
 
     &__cell
-
       &--heading
         margin: -10px -10px 15px -10px
         padding: 10px
@@ -56,12 +55,16 @@
           border-bottom-color: inherit
           margin-bottom: 15px
 
+          &[data-billing-plan="monthly"] li:first-child
+            transform: scale(1.5)
+          &[data-billing-plan="yearly"] li:last-child
+            transform: scale(1.5)
+
           li
             margin: 0 auto 10px
             width: max-content
-
-            &.active
-              transform: scale(1.5)
+            transform: scale(0.9)
+            transition: transform 0.4s linear
 
             strong
               position: relative
@@ -87,31 +90,30 @@
                 left: -8px
                 transform: translateY(-50%)
 
-      &--features
-        ul
-          margin-bottom: 15px
-          
-          li
+      &--features ul
+        margin-bottom: 15px
+        
+        li
+          display: flex
+          align-items: center
+          justify-content: space-between
+          gap: 10px
+          padding: 10px 0
+
+          span
             display: flex
             align-items: center
-            justify-content: space-between
-            gap: 10px
-            padding: 10px 0
+            justify-content: center
+            width: 30px
+            min-width: 30px
+            height: 30px
+            border-radius: 50%
+            color: $main-light-color
 
-            span
-              display: flex
-              align-items: center
-              justify-content: center
-              width: 30px
-              min-width: 30px
-              height: 30px
-              border-radius: 50%
-              color: $main-light-color
-
-            &.allowed span
-              background-color: $accent-green-color
-            &.forbidden span
-              background-color: $accent-red-color
+          &.allowed span
+            background-color: $accent-green-color
+          &.forbidden span
+            background-color: $accent-red-color
 
       &--buy
         position: relative
@@ -135,6 +137,33 @@
 
           &:hover
             box-shadow: inset 0 -55px 0 0 $accent-green-color
+
+@include onTablet
+  .table__body
+    &__row
+      width: 33%
+
+    &__cell--features ul li
+      padding: 5px 0
+
+      span
+        width: 25px
+        min-width: 25px
+        height: 25px
+
+@include onMobile
+  .table
+    margin-bottom: 20px
+
+    &__body
+      flex-direction: column
+
+      &__row
+        width: 100%
+        margin-bottom: 15px
+
+        &:last-child
+          margin-bottom: 0
 
 
 
